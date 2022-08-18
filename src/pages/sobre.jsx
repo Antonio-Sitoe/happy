@@ -7,7 +7,7 @@ export class ComponentPrinted extends React.PureComponent {
     return (
       <div>
         <div>
-          <h1>Antonio Manuel</h1>
+          <h1>Luan Henrique</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum
             eligendi at explicabo quaerat, voluptatem dicta officia architecto
