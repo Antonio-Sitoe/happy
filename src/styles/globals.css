@@ -6,6 +6,11 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -15,7 +20,7 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: Light) {
   html {
     color-scheme: dark;
   }
