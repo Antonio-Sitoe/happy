@@ -1,47 +1,5 @@
 import styled from "styled-components";
 
-// export const Container = styled.div`
-//   display: grid;
-//   place-items:center;
-//   background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
-//   height: 100vh;
-//   width: 100%;
-
-//   .content{
-//     position: relative;
-//     width: 80%;
-//     margin: 20px auto;
-//     max-width: 1100px;
-//     border: 1px solid black;
-
-//     header,.box{
-//       display: flex;
-//       justify-content:space-between;
-//       align-items:center;
-//     }
-
-//     header{
-//       .location{
-//         display: flex;
-//         flex-direction: column;
-//         align-items: flex-end;
-//         color: #fff;
-//       }
-//     }
-//     .box{
-//       .left-content{
-//         margin-left: 30px;
-
-//         h1{
-//           font-size: 76px;
-//           font-weight: 900;
-//           line-height: 70px;
-//         }
-//       }
-//     }
-
-//   }
-// `;
 
 export const NavLink = styled.a`
   border-radius: 0.9rem;
