@@ -35,7 +35,7 @@ function Home() {
               height={500}
             />
             <Link href="/">
-              <FiArrowRight size={26} color="rgba(0, 0, 0, 0.6)" />
+              <FiArrowRight  color="rgba(0, 0, 0, 0.6)" />
             </Link>
           </div>
         </div>
