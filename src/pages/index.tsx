@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container } from "../styles/home";
+import { Container, NavLink } from "../styles/home";
 import { FiArrowRight } from "react-icons/fi";
 import Link from "next/link";
 
@@ -34,8 +34,21 @@ function Home() {
               width={400}
               height={500}
             />
-            <Link href="/">
-              <FiArrowRight  color="rgba(0, 0, 0, 0.6)" />
+            <Link href="/dados">
+              {/* no next voce faz estilo aqui nessa ancora entao voce pode fazer com styled component desse jeito
+              
+              const NavLink = styled.a`blablabla`
+
+               <Link href="/">
+                 <NavLink>
+                    <FiArrowRight color="rgba(0, 0, 0, 0.6)" />
+                 </NavLink>
+               </Link>
+
+                */}
+              <NavLink>
+                <FiArrowRight  />
+              </NavLink>
             </Link>
           </div>
         </div>
