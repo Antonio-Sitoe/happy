@@ -111,13 +111,18 @@ export const Container = styled.div`
         svg{
           position: absolute;
           bottom:0;
-          right:150px;
+          right:90px;
           width: 60px;
           height: 60px;
           padding: 10px;
           background: #FFD666;
           border-radius: 15px;
           cursor:pointer;
+          transition: background ease 0.3s;
+
+          &:hover{
+            background: #96FEFF;
+          }
         }
 
         img{
