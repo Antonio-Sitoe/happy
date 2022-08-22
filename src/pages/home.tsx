@@ -1,3 +1,4 @@
+import React from 'react';
 import { Container } from '../styles/home';
 import { FiArrowRight } from 'react-icons/fi';
 import logo from '../assets/logo.svg';
@@ -5,7 +6,7 @@ import ilustration from '../assets/ilustrationHome.svg';
 import Link from "next/link";
 
 
-function Home(){
+function Home(): JSX.Element{
     return(
         <Container>
             <div className="content">
