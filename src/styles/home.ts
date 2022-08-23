@@ -168,6 +168,10 @@ export const Container = styled.div`
         .right-content{
           align-items:flex-end;
           top:0px;
+
+          .img{
+            border: 1px solid black;
+          }
         }
       }
     }

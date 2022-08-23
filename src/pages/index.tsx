@@ -33,6 +33,7 @@ function Home() {
               alt="Ilustração de crianças alegres"
               width={400}
               height={500}
+              className="img"
             />
             <Link href="/dados">
               <NavLink>
