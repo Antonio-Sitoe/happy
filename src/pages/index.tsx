@@ -11,7 +11,7 @@ function Home() {
           <Image
             src="/Logo.svg"
             alt="Logotipo (Happy)"
-            width={240}
+            width={200}
             height={74}
           />
 
@@ -33,7 +33,6 @@ function Home() {
               alt="Ilustração de crianças alegres"
               width={400}
               height={500}
-              className="img"
             />
             <Link href="/dados">
               <NavLink>
