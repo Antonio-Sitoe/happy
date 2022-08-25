@@ -34,20 +34,9 @@ function Home() {
               width={400}
               height={500}
             />
-            <Link href="/dados">
-              {/* no next voce faz estilo aqui nessa ancora entao voce pode fazer com styled component desse jeito
-              
-              const NavLink = styled.a`blablabla`
-
-               <Link href="/">
-                 <NavLink>
-                    <FiArrowRight color="rgba(0, 0, 0, 0.6)" />
-                 </NavLink>
-               </Link>
-
-                */}
+            <Link href="/mapa">
               <NavLink>
-                <FiArrowRight  />
+                <FiArrowRight />
               </NavLink>
             </Link>
           </div>
