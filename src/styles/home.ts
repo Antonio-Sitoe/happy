@@ -112,7 +112,7 @@ export const Container = styled.div`
           top: -45px;
           left: -15px;
           overflow: initial;
-          /* animation: ${animateIlustration} 8s linear infinite; */
+          animation: ${animateIlustration} 8s linear infinite;
         }
       }
     }
@@ -140,12 +140,18 @@ export const Container = styled.div`
   /* sm */
   @media(max-width: 700px){
     div.content{
-      width: 95%;
+      width: 98%;
       
       header{
+        gap: 15px;//Remover
+
         .location{
-          font-size: 18px;
+          position: relative;
+          top: 4px; //Remover 
+          text-align:right;//Remover
+          font-size: 16px;
           line-height: 20px;
+          
         }
       }
       .box{
@@ -168,6 +174,10 @@ export const Container = styled.div`
         .right-content{
           align-items:flex-end;
           top:0px;
+
+          .img{
+            border: 1px solid black;
+          }
         }
       }
     }
