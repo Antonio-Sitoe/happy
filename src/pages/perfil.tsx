@@ -1,7 +1,10 @@
+import Layault from '../Components/Layault/Layault'
 
 const Perfil = () => {
   return (
-    <div>Perfil</div>
+    <Layault title='Orfanato'>
+SDSD
+    </Layault>
   )
 }
 

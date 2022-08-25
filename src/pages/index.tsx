@@ -34,9 +34,9 @@ function Home() {
               width={400}
               height={500}
             />
-            <Link href="/dados">
+            <Link href="/mapa">
               <NavLink>
-                <FiArrowRight  />
+                <FiArrowRight />
               </NavLink>
             </Link>
           </div>
