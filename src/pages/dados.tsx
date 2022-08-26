@@ -1,8 +1,11 @@
 import React from 'react'
+import Layault from '../Components/Layault/Layault'
 
 const Dados = () => {
   return (
-    <div>Dados</div>
+    <Layault title='Adicione um orfanato'>
+      DS
+    </Layault>
   )
 }
 

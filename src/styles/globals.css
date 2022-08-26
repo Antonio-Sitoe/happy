@@ -1,7 +1,11 @@
 html {
   --btnColor: ;
+  --TextColorLight: #8FA7B3;
   --btnHover: ;
-  --bgHome: ;
+  --bgHome: #ebf2f5;
+  --bgColorLigth: #15c3d6;
+  --bgColorDark: #12AFCB;
+  --bgColorDarkHover: #17D6EB;
 }
 html,
 body {
@@ -18,6 +22,11 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+button {
+  border: none;
+  border-radius: 1rem;
 }
 
 * {
