@@ -1,6 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-
 export const NavLink = styled.a`
   border-radius: 0.9rem;
   max-width: 60px;
