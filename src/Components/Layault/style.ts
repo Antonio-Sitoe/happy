@@ -1,19 +1,13 @@
 import styled from "styled-components";
 
-
 export const Main = styled.main`
   width: 100%;
   height: 100%;
   background: var(--bgHome);
   display: grid;
   grid-template-columns: 6rem 1fr;
-  div {
-    padding: 0 2rem;
-    h3 {
-      text-align: center;
-      color: var(--TextColorLight);
-      font-size: 1.125rem;
-    }
+  @media (max-width: 40rem) {
+    grid-template-columns: 1fr;
   }
 `;
 export const Sidebar = styled.aside`
@@ -48,6 +42,10 @@ export const Sidebar = styled.aside`
       background: var(--bgColorDarkHover);
     }
   }
+
+  @media (max-width: 40rem) {
+    display: none;
+  }
 `;
 export const Content = styled.section`
   border: 1px solid #d3e2e5;
@@ -55,7 +53,43 @@ export const Content = styled.section`
   margin-bottom: 2rem;
   display: block;
   max-width: 40rem;
-  margin: 3rem auto;
+  margin: 1rem auto;
   border-radius: 1.6rem;
   background: white;
+`;
+
+
+export const HeaderStyle = styled.div`
+
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 40rem;
+  margin: 0 auto;
+
+  a {
+    padding: .5rem 1rem;
+    border-radius: 0.3rem;
+    background: var(--btnColor);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .6rem;
+
+  }
+    h3 {
+    text-align: center;
+    color: var(--TextColorLight);
+    font-size: 1.125rem;
+  }
+
+  @media (min-width: 40rem) {
+    a {
+      display: none;
+    }
+    justify-content: center;
+  }
 `;
