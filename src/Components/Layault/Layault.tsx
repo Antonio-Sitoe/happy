@@ -2,8 +2,8 @@ import Image from "next/image";
 import React, { ReactNode } from "react";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import Link from "next/link";
-import { Content, Sidebar, Main } from './style';
-
+import { Content, Sidebar, Main, HeaderStyle } from "./style";
+import styled from "styled-components";
 
 interface ILayault {
   children: ReactNode;
@@ -23,7 +23,15 @@ const Layault = ({ children, title }: ILayault) => {
         </Link>
       </Sidebar>
       <div>
-        <h3>{title}</h3>
+        <HeaderStyle>
+          <Link href={"/mapa"}>
+            <a>
+              <AiOutlineArrowLeft />
+              Voltar
+            </a>
+          </Link>
+          <h3>{title}</h3>
+        </HeaderStyle>
         <Content>{children}</Content>
       </div>
     </Main>

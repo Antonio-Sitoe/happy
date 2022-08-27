@@ -1,5 +1,8 @@
 html {
+  --btnColor:#12AFCB ;
   --TextColorLight: #8FA7B3;
+  --TextColor: #4D6F80;
+  --btnHover: ;
   --bgHome: #ebf2f5;
   --bgColorLigth: #15c3d6;
   --bgColorDark: #12AFCB;
