@@ -11,7 +11,7 @@ function Home() {
           <Image
             src="/Logo.svg"
             alt="Logotipo (Happy)"
-            width={240}
+            width={200}
             height={74}
           />
 
