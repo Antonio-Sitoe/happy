@@ -12,6 +12,11 @@ export const GaleryMultImages = styled.div`
     width: 5.875rem;
     border-radius: 1rem;
   }
+
+  @media (max-width:30rem){
+    padding: 0.5rem;
+    gap: .5rem;
+  }
 `;
 
 export const BannerImage = styled.section`

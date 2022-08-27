@@ -10,6 +10,11 @@ export const OrphanageInfoStyle = styled.div`
   h2 {
     font-size: 2rem;
   }
+  @media (max-width:30rem){
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
 `;
 
 interface IOrphanage {

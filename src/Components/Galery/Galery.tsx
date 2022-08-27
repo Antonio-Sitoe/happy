@@ -40,8 +40,8 @@ const Galery = () => {
               key={index}
               src={`/${img}`}
               alt={""}
-              width={94}
-              height={94}
+              width={100}
+              height={100}
             />
           );
         })}
