@@ -6,6 +6,7 @@ export const Main = styled.main`
   background: var(--bgHome);
   display: grid;
   grid-template-columns: 6rem 1fr;
+  padding: 0 1rem;
   @media (max-width: 40rem) {
     grid-template-columns: 1fr;
   }
@@ -49,8 +50,6 @@ export const Sidebar = styled.aside`
 `;
 export const Content = styled.section`
   border: 1px solid #d3e2e5;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   display: block;
   max-width: 40rem;
   margin: 1rem auto;
@@ -60,14 +59,11 @@ export const Content = styled.section`
 
 
 export const HeaderStyle = styled.div`
-
-  padding: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 40rem;
   margin: 0 auto;
-
   a {
     padding: .5rem 1rem;
     border-radius: 0.3rem;
