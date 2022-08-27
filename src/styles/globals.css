@@ -1,11 +1,10 @@
 html {
-  --btnColor: ;
   --TextColorLight: #8FA7B3;
-  --btnHover: ;
   --bgHome: #ebf2f5;
   --bgColorLigth: #15c3d6;
   --bgColorDark: #12AFCB;
   --bgColorDarkHover: #17D6EB;
+  
 }
 html,
 body {
