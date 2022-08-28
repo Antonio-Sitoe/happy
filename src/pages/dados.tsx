@@ -4,7 +4,7 @@ import Layault from '../Components/Layault/Layault'
 import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
-
+import styled from "styled-components";
 
 type Inputs = {
   name: string,
@@ -14,6 +14,10 @@ type Inputs = {
   visitHour: number,
   weekendService: boolean
 }
+
+const Form = styled.form`
+  padding: 2rem;
+`;
 
 const schema = yup.object({
   name: yup.string().required("Por favor, informe seu nome!"),
@@ -27,6 +31,7 @@ const schema = yup.object({
 
 const Dados = () => {
 
+
   const [ dataUser , setDataUser ] = useState({});
   
   const {
@@ -39,38 +44,38 @@ const Dados = () => {
   });
 
 
+
   const onSubmit: SubmitHandler<Inputs> = data => console.log(data);
 
   return (
-    <Layault title='Adicione um orfanato'>
-      <form onSubmit={handleSubmit(onSubmit)}>
+
+    <Layault title="Adicione um orfanato">
+      <Form  onSubmit={handleSubmit(onSubmit)}>
         <Container>
           <section className="section-dados">
-
             <h1>Dados</h1>
 
-            <div className="field">
-              mapa
-            </div>
+            <div className="field">mapa</div>
 
             <div className="field">
-              <label htmlFor="name">Nome *</label>
-              <input type="text" id="name" {...register("name")} required/>
+               <label htmlFor="name">Nome *</label>
+              <input type="text" id="name" />
+                  <input type="text" id="name" {...register("name")} required/>
               {errors.name && <span className="error-alert">{errors.name?.message}</span>}
             </div>
 
             <div className="field">
               <div className="info-sobre">
-                <label htmlFor="sobre">Sobre *</label>
-                <small>Máximo de 300 carecteres</small>
 
+            <label htmlFor="sobre">Sobre *</label>
+                <small>Máximo de 300 carecteres</small>
               </div>
 
-              <textarea id="sobre" maxLength={300} {...register("about")} required/>
+                   <textarea id="sobre" maxLength={300} {...register("about")} required/>
               {errors.about && <span className="error-alert">{errors.about?.message}</span>}
             </div>
 
-            <div className="field">
+           <div className="field">
               <label htmlFor="whatsappNumber">Número do Whatsapp *</label>
               <input type="number" id="whatsappNumber" {...register("whatsappNumber")} required/>
               {errors.whatsappNumber && <span className="error-alert">{errors.whatsappNumber?.message}</span>}
@@ -78,45 +83,40 @@ const Dados = () => {
             </div>
 
             <div className="field">
-              <label htmlFor="photo">Fotos</label>
-              <label htmlFor="photo"className="inputPhoto">+</label>
+             <label htmlFor="photo"className="inputPhoto">+</label>
               <input type="file" id="photo"/>
             </div>
-
           </section>
 
           <section className="section-validacao">
-
             <h1>Visitação</h1>
-
             <div className="field">
               <label htmlFor="instruction">Instrução *</label>
               <textarea id="instruction" maxLength={300} {...register("instruction")} required/>
               {errors.instruction && <span className="error-alert">{errors.instruction?.message}</span>}
-              
             </div>
 
             <div className="field">
               <label htmlFor="visitHour">Horário de visitas *</label>
               <input type="time" id="visitHour " {...register("visitHour")} required/>
               {errors.visitHour && <span className="error-alert">{errors.visitHour?.message}</span>}
+              <button>+</button>
             </div>
+          </section>
 
+          <section className="section-validacao">
             <div className="toggle-content">
               <label htmlFor="checkbox">Atende fim de semana?</label>
               <input type="checkbox" id="checkbox" {...register("weekendService")} />
             </div>
-
             <div className="field">
               <input type="submit" value="Confirmar" />
             </div>
-
           </section>
-
         </Container>
-      </form>
+      </Form>
     </Layault>
-  )
-}
+  );
+};
 
-export default Dados
+export default Dados;
