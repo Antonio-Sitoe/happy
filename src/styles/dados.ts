@@ -2,6 +2,11 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     font-family: "Nunito", sans-serif;
+    padding: 20px;
+    .error-alert{
+        color: #EB606B;
+        margin-top: 5px;    
+    }
    
     h1{
         color: var(--TextColorLight);
@@ -15,6 +20,10 @@ export const Container = styled.div`
         align-items:flex-start;
         margin: 20px 0;
         padding:0;
+
+        input[type="file"]{
+            display: none;
+        }
 
         .info-sobre{
             display: flex;
@@ -52,13 +61,14 @@ export const Container = styled.div`
             padding: 10px;
             line-height: 28px;
         }
-        button{
+        .inputPhoto{
             margin-top: 5px;
             padding: 15px 25px;
             font-size: 26px;
             background: #F5F8FA;
             color: var(--bgColorLigth);
             border:1px dashed #D3E2E5;
+            border-radius:20px;
             cursor:pointer;
 
             &:hover{
